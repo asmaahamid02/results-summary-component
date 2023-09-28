@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('../assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+  font-weight: 100 1000;
+}
+
+/*Variables*/
+:root {
+  /*Primary*/
+  --Light-red: 0, 100%, 67%;
+  --Orangey-yellow: 39, 100%, 56%;
+  --Green-teal: 166, 100%, 37%;
+  --Cobalt-blue: 234, 85%, 45%;
+
+  /*Gradients*/
+  --Light-slate-blue-bg: hsl(252, 100%, 67%);
+  --Light-royal-blue-bg: hsl(241, 81%, 54%);
+
+  --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+  --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+  /*Neutral*/
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: 241, 100%, 89%;
+  --Dark-gray-blue: 224, 30%, 27%;
+}
+
+/*Reset*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  background: var(--White);
+  min-width: 370px;
+  max-width: 1440px;
+}
+
+/*Common*/
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+main {
+  padding: 2em;
+}
+
+section {
+  border-radius: 1.5em;
+  box-shadow: 14px 15px 20px hsla(var(--Light-lavender), 0.2);
+  overflow: hidden;
+  width: 670px;
+}
+
+section > div {
+  flex-basis: 50%;
+}
+
+.result {
+  padding: 1.7em;
+  border-radius: 1.5em;
+}
+
+.result,
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    var(--Light-slate-blue-bg),
+    var(--Light-royal-blue-bg)
+  );
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+.result > h3 {
+  color: hsl(var(--Light-lavender));
+  padding-bottom: 1.35em;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  background: linear-gradient(
+    to bottom,
+    var(--Violet-blue-circle),
+    var(--Persian-blue-circle)
+  );
+}
+
+.circle > h2 {
+  color: var(--White);
+  font-size: 3.6em;
+  font-weight: 800;
+}
+
+.circle > p {
+  color: hsla(var(--Light-lavender), 0.5);
+  font-weight: 700;
+}
+
+.congrats > h3 {
+  text-align: center;
+  font-weight: 700;
+  color: var(--White);
+  padding: 0.7em;
+  font-size: 1.5em;
+}
+
+.congrats > p {
+  text-align: center;
+  font-size: 0.95em;
+  font-weight: 500;
+  color: hsla(221, 100%, 96%, 0.6);
+  padding: 0 1em 0.7em 1em;
+}
+
+.summary {
+  padding: 1.5em;
+}
+
+.summary > h3 {
+  color: hsl(var(--Dark-gray-blue));
+  font-weight: 800;
+}
+
+.details {
+  padding: 1.7em 0;
+  gap: 1em;
+}
+
+.summary-item {
+  border-radius: 0.7em;
+  padding: 0 0.75em;
+  height: 55px;
+}
+
+.summary-item:nth-child(1) {
+  background: hsla(var(--Light-red), 0.1);
+}
+
+.summary-item:nth-child(2) {
+  background: hsla(var(--Orangey-yellow), 0.1);
+}
+
+.summary-item:nth-child(3) {
+  background: hsla(var(--Green-teal), 0.1);
+}
+
+.summary-item:nth-child(4) {
+  background: hsla(var(--Cobalt-blue), 0.1);
+}
+
+.item-title {
+  font-weight: 700;
+  gap: 0.5em;
+}
+
+.summary-item:nth-child(1) .item-title p {
+  color: hsl(var(--Light-red));
+}
+
+.summary-item:nth-child(2) .item-title p {
+  color: hsl(var(--Orangey-yellow));
+}
+
+.summary-item:nth-child(3) .item-title p {
+  color: hsl(var(--Green-teal));
+}
+
+.summary-item:nth-child(4) .item-title p {
+  color: hsl(var(--Cobalt-blue));
+}
+
+.item-score {
+  font-weight: 800;
+  color: hsla(var(--Dark-gray-blue), 0.5);
+}
+
+.item-score span {
+  color: hsl(var(--Dark-gray-blue));
+}
+
+button {
+  border: 0;
+  outline: 0;
+  padding: 1.15em 0;
+  border-radius: 2em;
+  background: hsl(var(--Dark-gray-blue));
+  color: var(--White);
+  font-size: 0.95em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 742px) {
+  main {
+    padding: 0;
+  }
+  section {
+    flex-direction: column;
+    width: 370px;
+  }
+
+  .circle {
+    width: 8.5em;
+    height: 8.5em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .congrats > h3 {
+    font-size: 1.3em;
+  }
+
+  .congrats > p,
+  .summary-item {
+    font-size: 0.9em;
+  }
+}
