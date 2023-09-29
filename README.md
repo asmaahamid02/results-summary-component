@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL here](https://github.com/asmaahamid02/results-summary-component)
+- Live Site URL: [URL here](https://asmaahamid02.github.io/results-summary-component/)
 
 ## My process
 
