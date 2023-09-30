@@ -26,8 +26,17 @@ Users should be able to:
 
 ### Screenshot
 
-![](./readme/wide-screen.png)
-![](./readme/small-screen.png)
+#### Desktop
+
+<p align="center">
+<img src="./readme/wide-screen.png" alt="wide screen" width="600"/>
+
+#### Mobile
+
+</p>
+<p align="center">
+<img src="./readme/small-screen.png" alt="small screen" width="300"/>
+</p>
 
 ### Links
 
