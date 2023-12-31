@@ -77,5 +77,6 @@ I will be focusing on the following points in the future:
 
 ## Author
 
-- Website - [Asmaa Hamid](https://linktr.ee/asmaa.codes)
+- Website - [Asmaa Hamid](https://linktr.ee/asmaahamid02)
 - Frontend Mentor - [@asmaahamid02](https://www.frontendmentor.io/profile/asmaahamid02)
+
